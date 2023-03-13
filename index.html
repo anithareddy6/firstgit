@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form  onsubmit="saveToLocalStorage(event)">
+        <div class="main-page">
+            <label for="">Choose expenseamount:</label>
+            <input type="number" id="Input1">
+            <label for="">Choose description:</label>
+            <input type="text" id="Input2">
+            <label for="">Choose catagory:</label>
+            <select name="option" class="option" id="list">
+                <option class="option"></option>
+                <option class="option">Movie</option>
+                <option class="option">Rent</option>
+                <option class="option">Education</option>
+                <option class="option">Snacks</option>
+                <option class="option">Electric bill</option>
+            </select>
+            <button id="btn-add">Add Expense</button>
+        </div>
+         </form>
+        <div class="second-page">
+            <ul id="front-page"></ul>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
